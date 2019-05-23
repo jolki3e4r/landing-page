@@ -1,0 +1,339 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url("https://farm8.staticflickr.com/7807/46639044924_3a38e690ff_o.png");
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+a {
+  color: #46bbfe;
+  text-decoration: none;
+}
+
+a:hover {
+   color: #00da48;
+}
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+@media (max-width: 650px) {
+  .logo img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+  z-index:10;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+   
+  }
+}
+
+nav ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* seccion del correo*/
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 350px;
+  margin-top: 50px;
+}
+#hero h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  color: #46bbfe;
+}
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 15px;
+  border: 5px solid white; 
+  -webkit-box-shadow: 
+  inset 0 0 8px  rgba(0,0,0,0.1),
+        0 0 16px rgba(0,0,0,0.1); 
+}
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  border: 0;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fed000;
+  background-color: #46bbfe;
+}
+#hero input[type="submit"]:hover {
+  background-color: #00da48;
+  transition: background-color 1s;
+}
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+/* seccion de los tres iconos*/
+
+#features {
+  margin-top: 30px;
+}
+#ticon {
+  margin-top: 30px;
+  withg:70px;
+  height:70px;
+  display: flex;
+}
+
+#tressecciones {
+  display: block;
+  margin:0 auto;
+  color: #fed000;
+}
+
+
+#sec1 {
+  margin: auto;
+  max-width: 750px;
+  width: 100%;
+  height:100px;
+  position:relative;
+}
+
+#sec2  {
+  margin: auto;
+  max-width: 750px;
+  width: 100%;
+  height:100px;
+  position:relative;
+
+}
+
+#sec3  {
+  margin: auto;
+  max-width: 750px;
+  width: 100%;
+  height:100px;
+  position:relative;
+}
+
+
+#sec1 img {
+  color: #fed000;
+  margin:auto;
+  margin-right:20px;
+  float:left;
+  
+}
+#sec2 img {
+  color: #fed000;
+  margin:auto;
+  margin-right:20px;
+  float:left;
+  
+}
+#sec3 img {
+  color: #fed000;
+  margin:auto;
+  margin-right:20px;
+  float:left;
+  
+}
+
+#sec1 h2 {
+  color: #46bbfe;
+
+}
+#sec2 h2 {
+  color: #46bbfe;
+
+  
+}#sec3 h2 {
+  color: #46bbfe; 
+}
+#sec1 p {
+  color: #f2f2f2; 
+}
+#sec2 p {
+  color:#f2f2f2; 
+}#sec3 p {
+  color: #f2f2f2; 
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#how-it-works iframe {
+  max-width: 700px;
+  width: 100%;
+}
+
+
+
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pricing #tenor, #pricing #bass, #pricing #valve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #ff7a01;
+  border-radius: 3px;
+}
+
+#pricing #tenor .level, #pricing #bass .level, #pricing #valve .level {
+  background-color: #ff7a01;
+  color:#f2f2f2;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#pricing #tenor h2, #pricing #bass h2, #pricing #valve h2 {
+  margin-top: 15px;
+  color:#46bbfe;
+}
+#pricing #tenor ol, #pricing #bass ol, #pricing #valve ol {
+  margin: 15px 0;
+  color:#f2f2f2;
+}
+#pricing #tenor ol li, #pricing #bass ol li, #pricing #valve ol li {
+  padding: 5px 0;
+  color:#f2f2f2;
+}
+#pricing #tenor button, #pricing #bass button, #pricing #valve button {
+  border: 0;
+  margin: 15px 0;
+  font-weight: 400;
+}
+#pricing #tenor button:hover, #pricing #bass button:hover, #pricing #valve button:hover {
+  background-color: #00da48;
+  transition: background-color 1s;
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fed000;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: #46bbfe;
+ 
+  cursor: pointer;
+  
+ 
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  #pricing #tenor, #pricing #bass, #pricing #valve {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  padding: 0 10px;
+}
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
